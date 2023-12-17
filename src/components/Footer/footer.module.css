@@ -1,0 +1,15 @@
+footer {
+  padding: 0 var(--wrapper);
+  max-width: var(--wrapper-max);
+  margin: 0 auto;
+}
+
+footer p:last-child {
+  font-size: var(--body-small);
+  text-align: center;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+}

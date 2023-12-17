@@ -1,0 +1,181 @@
+/*------------------------------------- RESET --------------------------------------*/
+/*
+1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+Typographic tweaks!
+3. Add accessible line-height
+4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+8. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+/*
+9. Remove unordered lists default styles
+*/
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* ------------------------------------- GENERAL ---------------------------------- */
+
+@font-face {
+  font-family: TexasLED;
+  src: local('TexasLED'), url('/assets/fonts/texasled-webfont.woff2') format('woff2');
+  font-display: swap;
+}
+.texasled {
+  font-family: 'TexasLED', monospace;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: var(--primary-500);
+}
+
+body {
+  font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
+  line-height: 1.75;
+  font-weight: 400;
+  background-color: var(--neutral-900);
+  color: var(--neutral-50);
+}
+
+/* Typescale of 1.200 Minor Third */
+h1 {
+  font-size: var(--title-large);
+}
+h2 {
+  font-size: var(--title-medium);
+}
+h3 {
+  font-size: var(--title-small);
+}
+h4 {
+  font-size: var(--body-large);
+}
+
+a {
+  text-decoration: none;
+  color: var(--neutral-50);
+}
+
+/* Change text selection color */
+::-moz-selection {
+  /* Code for Firefox */
+  background: var(--primary-900);
+}
+
+::selection {
+  background: var(--primary-900);
+}
+/* ------------------------------------- VARIABLES ---------------------------------- */
+
+:root {
+  font-size: clamp(1rem, 0.9199rem + 0.4274vw, 1.125rem);
+
+  --neutral-50: #fff;
+  --neutral-100: #f8f9fa;
+  --neutral-200: #e8f0fe;
+  --neutral-300: #e2e2e2;
+  --neutral-400: #595959;
+  --neutral-500: #2c2c2c;
+  --neutral-800: #1f1f1f;
+  --neutral-900: #0b0b0b;
+
+  --primary-500: #f6fa2a;
+  --primary-600: #f5f87c;
+  --primary-700: #d2d627;
+
+  /* Typescale of 1.2 Minor Third */
+  --title-large: 2.074rem; /* h1 33.18px */
+  --title-medium: 1.728rem; /* h2 27.65px */
+  --title-small: 1.44rem; /* h3 23.04px */
+  --body-large: 1.2rem; /* h4 19.2px */
+  --body-medium: 1rem; /* p 16px */
+  --body-small: 0.833rem; /* small 13.33px */
+  --body-xsmall: 0.694rem; /* 11.11px */
+
+  --header-height: 80px;
+  --wrapper-max: 64rem; /* 1024px */
+  --wrapper: 2rem; /* 32px */
+}
+
+@media screen and (768px <= width) {
+  :root {
+    /* Typescale 1.250 Major Third */
+    font-size: clamp(1.125rem, 0.75rem + 0.7813vw, 1.25rem);
+    --title-large: 2.441rem; /* h1 48.83px */
+    --title-medium: 1.953rem; /* h2 39.06px */
+    --title-small: 1.563rem; /* h3 31.25px */
+    --body-large: 1.25rem; /* h4 25px */
+    --body-medium: 1rem; /* p 18px */
+    --body-small: 0.8rem; /* small 16px */
+    --body-xsmall: 0.64rem; /* 12.8px */
+  }
+}
+
+@media screen and (width >= 1024px) {
+  :root {
+    /* Typescale 1.333 Perfect Fourth */
+    font-size: 20px;
+    --title-large: 3.157rem; /* h1 63.15px */
+    --title-medium: 2.369rem; /* h2 47.37px */
+    --title-small: 1.777rem; /* h3 35.54px */
+    --body-large: 1.333rem; /* h4 26.66px */
+    --body-medium: 1rem; /* p 20px */
+    --body-small: 0.75rem; /* small 15px */
+    --body-xsmall: 0.563rem; /* 11.26px */
+  }
+}
