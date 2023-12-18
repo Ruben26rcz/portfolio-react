@@ -1,0 +1,5 @@
+.home {
+  padding: 0 var(--wrapper);
+  max-width: var(--wrapper-max);
+  margin: 0 auto;
+}

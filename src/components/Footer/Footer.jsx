@@ -10,6 +10,7 @@ function Footer() {
   return (
     <>
       <footer>
+        <hr />
         <div className={styles.links}>
           <Link target='_blank' to={RubenCV}>
             Resume

@@ -1,26 +1,23 @@
 import styles from './hero.module.css';
 
-import flipRubenWebp from '../../../assets/img/ruben-flip.webp';
-import flipRubenGif from '../../../assets/img/ruben-flip.gif';
-import flipCastilloWebp from '../../../assets/img/castillo-flip.webp';
-import flipCastilloGif from '../../../assets/img/castillo-flip.gif';
+import flipRuben from '../../../assets/img/ruben-flip.webp';
+import flipCastillo from '../../../assets/img/castillo-flip.webp';
 
 function Hero() {
   return (
     <section className={styles.hero}>
       <div>
-        <p>Hello! 👋 I'm</p>
+        <p className={styles.helloText}>
+          <b>Hello! 👋 I'm</b>
+        </p>
         <div className={styles.flipLetters}>
-          <picture srcSet={flipRubenWebp} type='image/webp'>
-            <img src={flipRubenGif} alt='Airport flipping letters that spells ruben' />
-          </picture>
-          <picture srcSet={flipCastilloWebp} type='image/webp'>
-            <img src={flipCastilloGif} alt='Airport flipping letters that spells castillo' />
-          </picture>
+          <img src={flipRuben} alt='Airport flipping letters that spells ruben' />
+          <img src={flipCastillo} alt='Airport flipping letters that spells castillo' />
         </div>
       </div>
       <p>
         A <b>UX/UI designer</b> 💻 with a background in Industrial design 🔩
+        <br />
         <br />
         Currently pursuing my Master's Degree in Digital Experience Design at BAU 📚
         <br />

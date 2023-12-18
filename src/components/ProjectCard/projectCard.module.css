@@ -1,0 +1,43 @@
+@font-face {
+  font-family: TexasLED;
+  src: local('TexasLED'), url('../../assets/fonts/texasled-webfont.woff2') format('woff2');
+  font-display: swap;
+}
+.title {
+  font-family: 'TexasLED', monospace;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: var(--primary-500);
+  font-size: var(--body-large);
+}
+
+.title:hover {
+  animation-name: led-animation;
+  animation-duration: 0.6s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+@keyframes led-animation {
+  0% {
+    text-shadow: none;
+  }
+  16% {
+    text-shadow: 0px 0px 5px #f6fa2a;
+  }
+  35% {
+    text-shadow: none;
+  }
+  56% {
+    text-shadow: 0px 0px 5px #f6fa2a;
+  }
+  76% {
+    text-shadow: none;
+  }
+  100% {
+    text-shadow: 0px 0px 5px #f6fa2a;
+  }
+}

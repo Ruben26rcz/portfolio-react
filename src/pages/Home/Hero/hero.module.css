@@ -1,9 +1,26 @@
 .hero {
-  padding: 0 var(--wrapper);
-  max-width: var(--wrapper-max);
-  margin: 0 auto;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  font-size: var(--body-large);
 }
 
-.flipLetters {
-  margin-left: -1rem;
+.hero p:last-child {
+  margin-top: 3rem;
+}
+
+.helloText {
+  font-size: var(--title-small);
+  padding-bottom: 1.5rem;
+}
+
+.flipLetters img {
+  height: 10vw;
+  max-height: 80px;
+  margin-left: -1.3rem;
+  scale: 1.15;
+  transform-origin: top left;
+}
+
+.flipLetters img:first-child {
+  margin-bottom: 1rem;
 }

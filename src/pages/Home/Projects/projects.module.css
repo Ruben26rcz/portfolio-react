@@ -1,0 +1,12 @@
+.projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 2rem;
+}
+
+@media screen and (768px <= width) {
+  .projects {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1.5rem;
+  }
+}

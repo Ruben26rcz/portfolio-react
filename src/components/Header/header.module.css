@@ -1,11 +1,13 @@
 header {
+  height: 96px;
   display: flex;
   justify-content: space-between;
   padding: 1rem var(--wrapper);
   max-width: var(--wrapper-max);
   margin: 0 auto;
+  background-color: cadetblue;
 }
 .memoji {
-  max-width: 208px;
-  height: 104px;
+  height: 100%;
+  background-color: blueviolet;
 }

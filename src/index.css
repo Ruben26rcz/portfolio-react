@@ -71,19 +71,6 @@ ul {
 }
 /* ------------------------------------- GENERAL ---------------------------------- */
 
-@font-face {
-  font-family: TexasLED;
-  src: local('TexasLED'), url('/assets/fonts/texasled-webfont.woff2') format('woff2');
-  font-display: swap;
-}
-.texasled {
-  font-family: 'TexasLED', monospace;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  font-weight: 400;
-  color: var(--primary-500);
-}
-
 body {
   font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
   line-height: 1.75;
@@ -138,44 +125,28 @@ a {
   --primary-600: #f5f87c;
   --primary-700: #d2d627;
 
-  /* Typescale of 1.2 Minor Third */
-  --title-large: 2.074rem; /* h1 33.18px */
-  --title-medium: 1.728rem; /* h2 27.65px */
-  --title-small: 1.44rem; /* h3 23.04px */
-  --body-large: 1.2rem; /* h4 19.2px */
+  /* Typescale of 1.33 Perfect Fourth */
+  --title-large: 3.157rem; /* h1 50.52px */
+  --title-medium: 2.369rem; /* h2 37.90px */
+  --title-small: 1.777rem; /* h3 28.43px */
+  --body-large: 1.333rem; /* h4 21.33px */
   --body-medium: 1rem; /* p 16px */
-  --body-small: 0.833rem; /* small 13.33px */
-  --body-xsmall: 0.694rem; /* 11.11px */
+  --body-small: 0.75rem; /* small 12px */
 
   --header-height: 80px;
   --wrapper-max: 64rem; /* 1024px */
-  --wrapper: 2rem; /* 32px */
-}
-
-@media screen and (768px <= width) {
-  :root {
-    /* Typescale 1.250 Major Third */
-    font-size: clamp(1.125rem, 0.75rem + 0.7813vw, 1.25rem);
-    --title-large: 2.441rem; /* h1 48.83px */
-    --title-medium: 1.953rem; /* h2 39.06px */
-    --title-small: 1.563rem; /* h3 31.25px */
-    --body-large: 1.25rem; /* h4 25px */
-    --body-medium: 1rem; /* p 18px */
-    --body-small: 0.8rem; /* small 16px */
-    --body-xsmall: 0.64rem; /* 12.8px */
-  }
+  --wrapper: 1.5rem; /* 24px */
 }
 
 @media screen and (width >= 1024px) {
   :root {
-    /* Typescale 1.333 Perfect Fourth */
+    /* Typescale 1.414 Augmented Fourth */
     font-size: 20px;
-    --title-large: 3.157rem; /* h1 63.15px */
-    --title-medium: 2.369rem; /* h2 47.37px */
-    --title-small: 1.777rem; /* h3 35.54px */
-    --body-large: 1.333rem; /* h4 26.66px */
+    --title-large: 3.998rem; /* h1 79.95px */
+    --title-medium: 2.827rem; /* h2 56.54px */
+    --title-small: 1.999rem; /* h3 39.99px */
+    --body-large: 1.414rem; /* h4 28.28px */
     --body-medium: 1rem; /* p 20px */
-    --body-small: 0.75rem; /* small 15px */
-    --body-xsmall: 0.563rem; /* 11.26px */
+    --body-small: 0.707rem; /* small 14.14px */
   }
 }

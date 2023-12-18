@@ -1,11 +1,13 @@
 import Hero from './Hero/Hero';
-import './home.module.css';
+import Projects from './Projects/Projects';
+import styles from './home.module.css';
 
 function Home() {
   return (
-    <>
+    <main className={styles.home}>
       <Hero />
-    </>
+      <Projects />
+    </main>
   );
 }
 
